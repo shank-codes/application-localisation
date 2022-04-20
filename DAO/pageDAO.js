@@ -67,6 +67,7 @@ exports.getPageById = async (id) => {
     return { Success: false, Error: err.message };
   }
 };
+//update page
 exports.update = async (pageId, details, transaction) => {
   try {
     let page = await models.page.update(
